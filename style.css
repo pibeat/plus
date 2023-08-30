@@ -27,7 +27,7 @@ body {
 .change {
     height: 29px;
     width: 270px;
-    border-color:#ff8000;
+    border-color: #ff8000;
     transition: all 1.5s ease-in-out;
 }
 
@@ -48,8 +48,8 @@ body {
 
 .btn:hover {
     color: #3e1422;
-    background-color:#ff8000;
-    border-color: #ff8000;
+    background-color: #ff8000;
+    border-color: #ee4980;
 }
 
 .det {
