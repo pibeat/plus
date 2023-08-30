@@ -116,16 +116,13 @@ h1 {
     text-align: right;
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.205);
 }
-.forecast-day{
-color: rgb(213, 222, 252);
-}
 
 .im {
     width: 60px;
 }
 
 .section2 {
-    padding: 20px 30px 10px 30px;
+    padding: 20px 30px 5px 30px;
     background: #f4f9ff;
     border-radius: 4px;
     text-align: center;
@@ -188,6 +185,8 @@ hr {
 
 #open-source{
     font-size: 10px;
+    text-align: left;
+    margin-bottom: 0;
 }
 
 #link {
