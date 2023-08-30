@@ -85,15 +85,6 @@ function getForecast(coordinates) {
 }
 //
 
-function changeImage (){
-  let temperature = response.data.main.temp;
-  let image = document.querySelector(#immagine);
-if (temperature > 24){
- image.innerHTML= "aqua2.png";
-} else {
-  image.innerHTML= "partcloud.png";
-}
-}
  
 
 
@@ -118,7 +109,7 @@ function changeCity(response) {
   );
 
   getForecast(response.data.coord);
-  changeImage ();
+  
 }
 
 function replaceH1(city) {
