@@ -27,7 +27,7 @@ body {
 .change {
     height: 29px;
     width: 270px;
-    border-color: #bb3c67;
+    border-color:#ff8000;
     transition: all 1.5s ease-in-out;
 }
 
@@ -48,8 +48,8 @@ body {
 
 .btn:hover {
     color: #3e1422;
-    background-color: #bb3c67;
-    border-color: #bb3c67;
+    background-color:#ff8000;
+    border-color: #ff8000;
 }
 
 .det {
@@ -122,12 +122,12 @@ h1 {
 }
 
 .section2 {
-    padding: 20px 30px 10px 30px;
+    padding: 10px 30px 10px 30px;
     background: #f4f9ff;
     border-radius: 4px;
     text-align: center;
     display: block;
-    margin: 10px 0px;
+    margin: 10px 0px 0px;
     color: rgb(32, 40, 69);
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.285);
 }
@@ -181,4 +181,13 @@ hr {
     color: blue;
     margin-top: 60px;
     margin-bottom: 37px;
+}
+
+#open-source{
+    font-size: 10px;
+}
+
+#link {
+    cursor:pointer;
+    color: blue;
 }
