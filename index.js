@@ -60,8 +60,8 @@ function weekForecast(response) {
     forecastHtml =
       forecastHtml +
       `<div class="col">
-  <br>
-  <br>
+      <br>
+      <br>
   <div id="forecast-day">${nameDays(dayF.dt)}</div>
   <br>
   <img class="im" id="dimg_5"
@@ -85,9 +85,6 @@ function getForecast(coordinates) {
 }
 //
 
- 
-
-
 function changeCity(response) {
   document.querySelector("#country").innerHTML = response.data.name;
   let temperature = document.querySelector("#degrees");
@@ -99,9 +96,8 @@ function changeCity(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
-
-  document.querySelector("#descriptionweather").innerHTML =
-    response.data.weather[0].main;
+  let clouds = document.querySelector("#descriptionweather");
+  clouds.innerHTML = response.data.weather[0].main;
   let sunElement = document.querySelector("#icon-sun");
   sunElement.setAttribute(
     "src",
@@ -109,7 +105,6 @@ function changeCity(response) {
   );
 
   getForecast(response.data.coord);
-  
 }
 
 function replaceH1(city) {
