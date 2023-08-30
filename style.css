@@ -116,6 +116,9 @@ h1 {
     text-align: right;
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.205);
 }
+.forecast-day{
+color: rgb(172, 191, 253);
+}
 
 .im {
     width: 60px;
