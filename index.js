@@ -104,6 +104,7 @@ function changeCity(response) {
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 
+  changeImage(response);
   getForecast(response.data.coord);
 }
 
@@ -119,6 +120,16 @@ function temperatureCity(event) {
   let city = document.querySelector("#city-input");
 
   replaceH1(city);
+}
+
+function changeImage(response) {
+  let temperature = response.data.main.temp;
+  let img = document.querySelector("#immagine");
+  if (temperature > 24) {
+    img.setAttribute("src", "aqua2.png");
+  } else {
+    img.setAttribute("src", "partcloud.png");
+  }
 }
 
 let searchForm = document.querySelector("#container-input");
